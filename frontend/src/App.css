@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Jost:wght@300;400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #fdf6f0;
+  --rose: #c9948a;
+  --rose-dark: #b87d72;
+  --rose-light: #f5e6df;
+  --rose-border: #e8d5cc;
+  --text-dark: #4a2e28;
+  --text-mid: #8a5a52;
+  --text-muted: #b89990;
+}
+
+body { background: var(--cream); font-family: 'Jost', sans-serif; }
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-orb {
+  position: fixed;
+  border-radius: 50%;
+  opacity: 0.10;
+  pointer-events: none;
+}
+
+.orb-1 { width: 700px; height: 700px; background: var(--rose); top: -250px; right: -200px; }
+.orb-2 { width: 450px; height: 450px; background: #d4a89e; bottom: -150px; left: -120px; }
